@@ -36,11 +36,6 @@ function selectColor(){
   $('td').click(function(){
     let current_color =  $(this).css('background-color');
     let new_color = $('#colorPicker').val();
-    if (new_color === current_color){
-      $(this).css('background-color', "white");
-    }
-    else{
-      $(this).css('background-color', new_color);
-    }
+    $(this).css('background-color', new_color);
   });
 };
